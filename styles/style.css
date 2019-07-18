@@ -1,0 +1,10 @@
+.btn-shop {
+    background: linear-gradient(to right, rgba(255, 52, 72, 0.367), rgba(255, 52, 72, 0.867));
+    border-radius: 16px;
+    font-size: 1.2em;
+
+}
+
+.navbar-sm {
+    float: right !important;
+}
