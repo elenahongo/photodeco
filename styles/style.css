@@ -1,10 +1,69 @@
 .btn-shop {
     background: linear-gradient(to right, rgba(255, 52, 72, 0.367), rgba(255, 52, 72, 0.867));
-    border-radius: 16px;
+    border-radius: 16px !important;
     font-size: 1.2em;
-
+    padding-top: 0% !important;
 }
 
-.navbar-sm {
-    float: right !important;
+.ani-title {
+    z-index: 1000;
 }
+
+
+/*Masonry*/
+* { box-sizing: border-box; }
+
+/* force scrollbar */
+html { overflow-y: scroll; }
+
+body { font-family: sans-serif; }
+
+/* ---- grid ---- */
+
+.grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  width: 32%;
+}
+
+.gutter-sizer {
+    width: 1.3333%;
+  }
+
+.grid-item {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+/*End Masonry*/
+
+/*gallery*/
+
+.hr__mod1 {
+    height: 4em;
+    border: none;
+    position: relative
+}
+
+
+.gallery-opc {
+  margin-top: 5em;
+}
+

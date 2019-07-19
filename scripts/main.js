@@ -1,6 +1,7 @@
 var titleShow = $('.ani-title')
 
 $(document).ready(function(){
+  if ($('#fullpage').length > 0) {
   $('#fullpage').fullpage({
     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
     scrollHorizontally: true,
@@ -10,6 +11,7 @@ $(document).ready(function(){
     scrollingSpeed: 700,
     v2compatible: false,
     responsiveWidth: 600,
+    verticalCentered: false,
 
    onLeave: function(origin, destination, direction) {
       titleShow.hide(0);
@@ -37,4 +39,21 @@ $(document).ready(function(){
     },
 
   });
+
+}
+
+if ($('.grid').length > 0) {
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer',
+  });
+
+// layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry();
+  });
+}
 });
