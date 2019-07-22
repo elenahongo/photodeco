@@ -42,6 +42,21 @@ body { font-family: sans-serif; }
     width: 1.3333%;
   }
 
+/*MEDIA QUERY FOR MASONRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+@media only screen and (max-width: 480px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+
+  .gutter-sizer {
+    width: 0%;
+  }
+
+}
+  
+
 .grid-item {
   float: left;
   margin-bottom: 10px;
@@ -67,3 +82,41 @@ body { font-family: sans-serif; }
   margin-top: 5em;
 }
 
+/* Effect 8:  */ 
+.grid.effect-8 {
+	-webkit-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-8 li.animate {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: scale(0.4);
+	transform: scale(0.4);
+	-webkit-animation: popUp .8s ease-in forwards;
+	animation: popUp .8s ease-in forwards;
+}
+
+@-webkit-keyframes popUp {
+	0% { }
+	70% { -webkit-transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@keyframes popUp {
+	0% { }
+	70% { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+}
+
+@media screen and (max-width: 900px) {
+	.grid li {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid li {
+		width: 100%;
+	}
+}

@@ -55,5 +55,7 @@ if ($('.grid').length > 0) {
   $grid.imagesLoaded().progress( function() {
     $grid.masonry();
   });
+
 }
+
 });
