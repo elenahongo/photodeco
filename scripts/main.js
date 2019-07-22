@@ -55,6 +55,14 @@ if ($('.grid').length > 0) {
     $grid.masonry();
   });
 
+  $('.heading').on('mouseover', event => {
+    $(event.currentTarget).find('.btn-to-shop').slideDown('fast');
+  });
+
+  $('.heading').on('mouseleave', event => {
+    $(event.currentTarget).find('.btn-to-shop').slideUp('fast');
+  });
+
 }
 
 });

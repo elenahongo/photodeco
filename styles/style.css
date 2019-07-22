@@ -50,17 +50,13 @@ body { font-family: sans-serif; }
     width: 100%;
   }
 
-  .gutter-sizer {
-    width: 0%;
-  }
-
 }
-  
-
+ 
 .grid-item {
   float: left;
   margin-bottom: 10px;
-  padding: 7px;
+  padding-right: 10px;
+  position: relative;
 }
 
 .grid-item img {
@@ -118,6 +114,53 @@ body { font-family: sans-serif; }
 
 @media screen and (max-width: 480px) {
 	.grid li {
-		width: 100%;
-	}
+    width: 100%;
+    margin: 0 auto !important;
+    float: none !important;
+    padding-right: none !important;
+    position: static;
+  }
+  
+  .grid img  {
+    width: 100%;
+    margin: 5px auto;
+    float: none;
+    padding-right: none;
+    position: static;
+  }
+  
+  .grid-item {
+    padding-right: 0;
+  }
+}
+
+/* fontawesome */
+
+/* galería */
+
+.btn-to-shop form button::before {
+  content: "\f217";
+  font-family: FontAwesome;
+  color: #ffffff;
+  padding-right: 10%;
+  font-size: 18px;
+}
+
+.grid-item div {
+  display:none;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.567);
+  width: 100%; 
+}
+
+.btn-to-shop form {
+padding: 5px 10px;
+}
+
+.btn-to-shop form button {
+  padding-right: 3%;
+  font-size: 80%;
+  border-radius: 0 !important;
 }
