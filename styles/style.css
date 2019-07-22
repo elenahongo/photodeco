@@ -21,7 +21,7 @@ body { font-family: sans-serif; }
 /* ---- grid ---- */
 
 .grid {
-  background: #DDD;
+  background: rgb(255, 255, 255);
 }
 
 /* clear fix */
@@ -60,6 +60,7 @@ body { font-family: sans-serif; }
 .grid-item {
   float: left;
   margin-bottom: 10px;
+  padding: 7px;
 }
 
 .grid-item img {
@@ -115,7 +116,7 @@ body { font-family: sans-serif; }
 	}
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 	.grid li {
 		width: 100%;
 	}

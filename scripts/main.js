@@ -48,7 +48,6 @@ if ($('.grid').length > 0) {
     itemSelector: '.grid-item',
     percentPosition: true,
     columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer',
   });
 
 // layout Masonry after each image loads
