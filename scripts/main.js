@@ -65,4 +65,9 @@ if ($('.grid').length > 0) {
 
 }
 
+if ($('.fotos').length > 0) {
+  $('.navbar').removeClass('fixed-top');
+  $('#black-background').css("background-color","black");
+}
+
 });

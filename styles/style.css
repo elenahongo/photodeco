@@ -1,3 +1,23 @@
+
+/* !!!!!!!!!NAVBAR!!!!!!!!!!!! */
+
+.navbar {
+  max-height: 50px;
+}
+
+.nav-item{
+  font-size: .8em; 
+}
+
+.navbar-nav .nav-link {
+  margin-right: 25px;
+  margin-left: 25px;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* !!!!!!!!!INDEX.HTML!!!!!!!!!!!! */
+
+/* BOTON FLOTANTE */
 .btn-shop {
     background: linear-gradient(to right, rgba(255, 52, 72, 0.367), rgba(255, 52, 72, 0.867));
     border-radius: 16px !important;
@@ -5,12 +25,39 @@
     padding-top: 0% !important;
 }
 
+/* TEXTO EN FULLPAGE*/
 .ani-title {
-    z-index: 1000;
+    display: none;
+}
+
+/* !!!!!!!!!GALERIA.HTML!!!!!!!!!!!! */
+
+.hr__mod1 {
+  height: 4em;
+  border: none;
+  position: relative
 }
 
 
-/*Masonry*/
+.gallery-opc {
+margin-top: 5em;
+}
+
+/* TEXTO ANIMADO CAPTION IMAGENES */
+
+.grid-item div {
+  display:none;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  width: 100%; 
+}
+.grid-item div p {
+  background: rgba(255, 255, 255, 0.567);
+}
+
+
+/* MASONRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 * { box-sizing: border-box; }
 
 /* force scrollbar */
@@ -32,31 +79,15 @@ body { font-family: sans-serif; }
 }
 
 /* ---- .grid-item ---- */
-
 .grid-sizer,
 .grid-item {
-  width: 32%;
+  width: 33.3333%;
 }
 
-.gutter-sizer {
-    width: 1.3333%;
-  }
-
-/*MEDIA QUERY FOR MASONRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
-
-@media only screen and (max-width: 480px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-  }
-
-}
- 
 .grid-item {
-  float: left;
-  margin-bottom: 10px;
-  padding-right: 10px;
-  position: relative;
+  margin-bottom: 1.2%;
+  padding-right: .6%;
+  padding-left: .6%;
 }
 
 .grid-item img {
@@ -66,44 +97,14 @@ body { font-family: sans-serif; }
 
 /*End Masonry*/
 
-/*gallery*/
+/*MEDIA QUERY FOR MASONRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
-.hr__mod1 {
-    height: 4em;
-    border: none;
-    position: relative
-}
+@media only screen and (max-width: 480px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
 
-
-.gallery-opc {
-  margin-top: 5em;
-}
-
-/* Effect 8:  */ 
-.grid.effect-8 {
-	-webkit-perspective: 1300px;
-	perspective: 1300px;
-}
-
-.grid.effect-8 li.animate {
-	-webkit-transform-style: preserve-3d;
-	transform-style: preserve-3d;
-	-webkit-transform: scale(0.4);
-	transform: scale(0.4);
-	-webkit-animation: popUp .8s ease-in forwards;
-	animation: popUp .8s ease-in forwards;
-}
-
-@-webkit-keyframes popUp {
-	0% { }
-	70% { -webkit-transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; }
-	100% { -webkit-transform: scale(1); opacity: 1; }
-}
-
-@keyframes popUp {
-	0% { }
-	70% { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
-	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
 }
 
 @media screen and (max-width: 900px) {
@@ -134,33 +135,39 @@ body { font-family: sans-serif; }
   }
 }
 
+
+/* Effect 8:  */ 
+.grid.effect-8 {
+	-webkit-perspective: 1300px;
+	perspective: 1300px;
+}
+
+.grid.effect-8 li.animate {
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+	-webkit-transform: scale(0.4);
+	transform: scale(0.4);
+	-webkit-animation: popUp .8s ease-in forwards;
+	animation: popUp .8s ease-in forwards;
+}
+
+@-webkit-keyframes popUp {
+	0% { }
+	70% { -webkit-transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(1); opacity: 1; }
+}
+
+@keyframes popUp {
+	0% { }
+	70% { -webkit-transform: scale(1.1); transform: scale(1.1); opacity: .8; -webkit-animation-timing-function: ease-out; animation-timing-function: ease-out; }
+	100% { -webkit-transform: scale(1); transform: scale(1); opacity: 1; }
+}
+
+
 /* fontawesome */
 
-/* galería */
+/* !!!!!!!!!!!!FOTOGRAFIA!!!!!!!!!!! */
 
-.btn-to-shop form button::before {
-  content: "\f217";
-  font-family: FontAwesome;
-  color: #ffffff;
-  padding-right: 10%;
-  font-size: 18px;
-}
+.fotos {
 
-.grid-item div {
-  display:none;
-  position: absolute;
-  bottom: 0;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.567);
-  width: 100%; 
-}
-
-.btn-to-shop form {
-padding: 5px 10px;
-}
-
-.btn-to-shop form button {
-  padding-right: 3%;
-  font-size: 80%;
-  border-radius: 0 !important;
 }
