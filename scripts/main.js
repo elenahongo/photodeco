@@ -6,12 +6,11 @@ $(document).ready(function(){
     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
     scrollHorizontally: true,
     continuousVertical: true,
-    navigation: true,
     resetSliders: true,
     scrollingSpeed: 700,
-    v2compatible: false,
-    responsiveWidth: 600,
     verticalCentered: false,
+    fitToSection: true,
+    navigation: true,
 
    onLeave: function(origin, destination, direction) {
       titleShow.hide(0);
