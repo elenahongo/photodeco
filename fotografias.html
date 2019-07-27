@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,600" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600&display=swap" rel="stylesheet">
     <script src="scripts/modernizr.custom.js"></script>
     
 
@@ -26,9 +26,11 @@
     
       <header>
 
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+          <nav class="navbar navbar-expand-lg">
             <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
-              <a class="navbar-brand" href="#"><img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-4/adhoc/logo.png" alt="logo adhoc" /></a>
+              <a class="navbar-brand" href="#">
+                <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-4/adhoc/logo.png" alt="logo adhoc" />
+              </a>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -42,7 +44,7 @@
                 <a class="nav-link" href="fotografias.html">Fotografías</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="cuadros.html">Cuadros</a>
+                <a class="nav-link" href="cuadros.html">Showroom</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Los Artistas</a>
@@ -66,41 +68,291 @@
                 <a href="./es/">
                     <img src="images/bandera-mex.jpg" alt="bandera">ES
                 </a>
-            </div>
-    -->
+            </div>-->
           </div>
           </div>
         </nav>
-    
-        </header>
-    
-      <div class="container-fluid justify-content-center fotos gallery-opc">
-          <div class="row">
-              <div class="col-12">
-                  <h1 class="hr__mod1">Atl gallery</h1>
-              </div>
-              <div class="col-12">
-                  <h4>Formatos</h4>
-                  <ul class="list-group">
-                      <li>
-                          <a href="./soho-in-homes/single" class="color-black li-active">Piezas únicas</a>
-                      </li>
-                      <li>
-                          <a href="./soho-in-homes/fragmented" class="color-black ">Piezas fragmentadas</a>
-                      </li>
-                  </ul>
-                  <br>
-              </div>
-              <div class="col-12">
 
-                
+        <nav class="navbar navbar-expand-lg" id="navbar-secondary">
+            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap">
+              <a class="navbar-brand" href="#"><img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-4/adhoc/logo.png" alt="logo adhoc" /></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        
+          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./index.html">Categoria 1<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fotografias.html">Categoria 2</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cuadros.html">Categoria 3</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categoria 4</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Categoria 5</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+        </nav>
 
-          <a href="#" class="back-top btn">
-              <i class="fa fa-angle-up fa-2x"></i>
-          </a>
+      </header>
+      
+      <div class="header-hero">
+        <h1> Arte. <br> 100% mexicano. </h1>
       </div>
+    
+      <div class="container fotos">
+        
+          <div class="row">
 
-     
+            <div class="col-12 col-md-4">
+              <div class="row">
+                <div id="a"  class="col-12">
+                  <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                </div>
+              </div>
+              <div class="row">
+                <div id="b"  class="col-12 foto-caption">
+                  <h4>Selva</h4>
+                  <p>Chiapas, México</p>  
+                </div>
+              </div>
+            </div>
+              
+            <div class="col-12 col-md-4">
+                <div class="row">
+                      <div id="a"  class="col-12">
+                        <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div id="b"  class="col-12 foto-caption">
+                        <h4>Selva</h4>
+                        <p>Chiapas, México</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col-12 col-md-4">
+                  <div class="row">
+                        <div id="a"  class="col-12">
+                          <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="b"  class="col-12 foto-caption">
+                          <h4>Selva</h4>
+                          <p>Chiapas, México</p>
+                        </div>
+                    </div>
+                </div>
+
+          </div>    
+        
+          <div class="row">
+            <div class="col-12x">
+              <div class="row">
+                <div id="a"  class="col-12">
+                  <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                </div>
+              </div>
+              <div class="row">
+                <div id="b"  class="col-12 foto-caption">
+                  <h4>Selva</h4>
+                  <p>Chiapas, México</p>  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            
+              <div class="col-12 col-md-6">
+                <div class="row">
+                  <div id="a"  class="col-12">
+                    <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 foto-caption">
+                    <h4>Selva</h4>
+                    <p>Chiapas, México</p>  
+                  </div>
+                </div>
+              </div>
+                
+              <div class="col-12 col-md-6">
+                  <div class="row">
+                        <div id="a"  class="col-12">
+                          <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div id="b"  class="col-12 foto-caption">
+                          <h4>Selva</h4>
+                          <p>Chiapas, México</p>
+                        </div>
+                    </div>
+                </div>
+  
+            </div>    
+
+
+          <div class="row">
+            <div class="col-12 col-md-4">
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                </div>
+              </div>
+              <div class="row">
+                <div class="foto-caption"  class="col-12">
+                  <h4>Selva</h4>
+                  <p>Chiapas, México</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                </div>
+              </div>
+              <div class="row">
+                <div class="foto-caption"  class="col-12">
+                  <h4>Selva</h4>
+                  <p>Chiapas, México</p>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-12">
+                    <img class="img-fluid" src="images/gallery/WP_20131101_003.jpg" alt="prueba">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="foto-caption"  class="col-12">
+                    <h4>Selva</h4>
+                    <p>Chiapas, México</p>
+                  </div>
+                </div>
+            </div>
+            
+             <!-- Piece C -->
+            <div class="col-12 col-md-8">
+              <div class="row">
+                <div class="col-12">
+                  <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                </div>
+              </div>
+              <div class="row">
+                <div class="foto-caption"  class="col-12">
+                  <h4>Selva</h4>
+                  <p>Chiapas, México</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-5">
+                  <div class="row">
+                    <div class="col-12">
+                      <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="foto-caption"  class="col-12">
+                      <h4>Selva</h4>
+                      <p>Chiapas, México</p>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12">
+                        <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="foto-caption"  class="col-12">
+                        <h4>Selva</h4>
+                        <p>Chiapas, México</p>
+                      </div>
+                    </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="foto-caption"  class="col-12">
+                      <h4>Selva</h4>
+                      <p>Chiapas, México</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-7">
+                    <div class="row">
+                      <div class="col-12">
+                        <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="foto-caption"  class="col-12">
+                        <h4>Selva</h4>
+                        <p>Chiapas, México</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12">
+                        <img class="img-fluid" src="images/gallery/max/IMG_9004.JPG" alt="prueba">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="foto-caption"  class="col-12">
+                        <h4>Selva</h4>
+                        <p>Chiapas, México</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="row">
+            <div id="d" class="col-3">
+              <!-- Piece D -->
+            </div>
+            
+            <div id="e" class="col-8">
+              <!-- Piece E -->
+            </div>
+            
+            <div class="col-1">
+             
+              <div class="row">
+                <div id="f" class="col-12">
+                  <!-- Piece F -->
+                </div>
+              </div>
+              
+              <div class="row">
+                <div id="g" class="col-12">
+                  <!-- Piece G -->
+                </div>
+              </div>
+               
+            </div>
+            
+          </div>  
+
+          <div class="col-12">
+            <a href="#" class="back-top btn">
+              <i class="fa fa-angle-up fa-2x"></i>
+            </a>
+          </div>
+        </div>
       
       
 

@@ -3,16 +3,19 @@
 
 .navbar {
   max-height: 50px;
+  background-color: rgb(24, 24, 24);
 }
 
 .nav-item{
-  font-size: .8em; 
+  font-size: .8em;
 }
 
 .navbar-nav .nav-link {
   margin-right: 25px;
   margin-left: 25px;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: white;
 }
 
 /* !!!!!!!!!INDEX.HTML!!!!!!!!!!!! */
@@ -28,6 +31,10 @@
 /* TEXTO EN FULLPAGE*/
 .ani-title {
     display: none;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 2em;
+    padding: 50% 10% 20% 10%;
 }
 
 /* !!!!!!!!!GALERIA.HTML!!!!!!!!!!!! */
@@ -63,7 +70,7 @@ margin-top: 5em;
 /* force scrollbar */
 html { overflow-y: scroll; }
 
-body { font-family: sans-serif; }
+body { font-family: Poppins, sans-serif; }
 
 /* ---- grid ---- */
 
@@ -167,7 +174,80 @@ body { font-family: sans-serif; }
 /* fontawesome */
 
 /* !!!!!!!!!!!!FOTOGRAFIA!!!!!!!!!!! */
+.header-hero {
+  width: 100%;
+  margin-top: 100px;
+  font-size: 5em;
+  color: white;
+  font-weight: 600; 
+  line-height: 1.2em;
+}
+
+.header-hero h1 {
+  margin: 0 auto;
+  text-align: center;
+}
 
 .fotos {
+  margin-top: 85px;
+}
 
+#navbar-secondary {
+  z-index: 1000;
+  border-bottom: 0.3px solid #b3b3b3;
+  background-color: rgba(0, 0, 0, 0.867)
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .fotos {
+  padding-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  .container{
+      max-width: 95%;
+  }
+}
+
+.foto-caption {
+  margin: 25px 0 55px 30px; 
+  max-height: 40px;
+  color: white;
+  line-height: 1.8em;
+}
+
+.foto-caption h4 {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+#c {
+  min-height: 355px;
+  background: rgb(220, 40, 26);
+}
+
+#d {
+  min-height: 150px;
+  background: rgb(0, 93, 159);
+}
+
+#e {
+  min-height: 150px;
+  background: rgb(255, 255, 255);
+}
+
+#f {
+  min-height: 75px;
+  background: rgb(255, 255, 255);
+}
+
+#g{
+  min-height: 75px;
+  background-color: rgb(242, 224, 122);
 }
