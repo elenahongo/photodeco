@@ -1,18 +1,29 @@
+/* Medidas de boostrap 
+
+Extra small
+
+< 576 px
+
+Small
+
+≥ 576 px
+
+Medium
+
+≥ 768 px
+
+Large
+
+≥ 992 px
+
+Extra Large
+
+≥ 1200 px */
 
 /* !!!!!!!!!NAVBAR!!!!!!!!!!!! */
 
 .navbar {
-  max-height: 50px;
   background-color: rgb(24, 24, 24);
-}
-
-.navbar .center .navbar-inner {
-  text-align: center;
-}
-
-.navbar .center .navbar-inner .nav {
-  display:inline-block;
-  float: none;
 }
 
 .nav-item{
@@ -20,11 +31,31 @@
 }
 
 .navbar-nav .nav-link {
-  margin-right: 25px;
-  margin-left: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
   color: white;
+}
+
+.navbar a img {
+  max-height: 22px;
+}
+
+@media only screen and (max-width: 864px) {
+  
+  .navbar-nav .nav-link {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+  .fullheight{
+    height: 100vh;
+  }
 }
 
 /* !!!!!!!!!INDEX.HTML!!!!!!!!!!!! */
@@ -85,6 +116,8 @@ margin-top: 5em;
 .grid-item div p {
   background: rgba(255, 255, 255, 0.567);
 }
+
+
 
 
 /* MASONRY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */

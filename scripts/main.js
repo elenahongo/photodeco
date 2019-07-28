@@ -1,6 +1,7 @@
 var titleShow = $('.ani-title')
 
 $(document).ready(function(){
+  
   if ($('#fullpage').length > 0) {
   $('#fullpage').fullpage({
     sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
@@ -86,5 +87,21 @@ function myFunction() {
   }
 }
 }
+
+if (($('.fotos').length > 0) || ($('.grid').length > 0)) {
+
+  $('#nav-toggler-full').on('click', () => {
+
+  console.log($('#nav-toggler-full').attr('aria-expanded'))
+  console.log($('#nav-fullheight'))
+  
+    if ($('#nav-toggler-full').attr('aria-expanded') === "false") {
+
+      $('#nav-fullheight').addClass("fullheight")
+        } else {
+      $('#nav-fullheight').removeClass("fullheight");
+      }
+    })
+  };
 
 });
