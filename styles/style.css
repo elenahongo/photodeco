@@ -20,10 +20,35 @@ Extra Large
 
 ≥ 1200 px */
 
+/* !!!!!!!!!RESPONSIVE FONT SIZE!!!!!!!!!!!! */
+
+html {
+  font-size: 1rem;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
+
 /* !!!!!!!!!NAVBAR!!!!!!!!!!!! */
 
 .navbar {
   background-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255)
 }
 
 .nav-item{
@@ -40,6 +65,31 @@ Extra Large
 
 .navbar a img {
   max-height: 22px;
+}
+
+.navbar button {
+  border: none;
+  height: 30px;
+  width: 54px;
+  color: rgba(255, 255, 255, 1)!important;
+}
+
+.navbar a {
+  color: white !important;
+}
+
+.navbar a:hover {
+  text-decoration: none;  
+}
+
+@media only screen and (max-width: 951px) {
+  
+  #navbar-secondary .nav-link{
+    margin-right: 18px;
+    margin-left: 18px;
+    font-size: .9em;
+  }
+
 }
 
 @media only screen and (max-width: 864px) {
@@ -59,6 +109,44 @@ Extra Large
 }
 
 /* !!!!!!!!!INDEX.HTML!!!!!!!!!!!! */
+
+/* !!!!!!!!! FULLPAGE !!!!!!!!! */
+
+#section1 {
+  background-image: url("../images/gallery/montañas.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#section2 {
+  background-image: url("../images/gallery/nubes.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#section3 {
+  background-image: url("../images/gallery/pradera.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#section4 {
+  background-image: url("../images/gallery/valle.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;}
+
+#section5 {
+  background-image: url("../images/gallery/aurora.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
 
 /* BOTON FLOTANTE */
 .btn-shop {
@@ -92,6 +180,35 @@ Extra Large
 }
 
 /* !!!!!!!!!GALERIA.HTML!!!!!!!!!!!! */
+
+
+.header-hero-black {
+  width: 100%;
+  margin-top: 70px;
+  font-size: 3em;
+  color: black;
+  font-weight: 600; 
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.header-hero-black h1 {
+  margin: 0 auto;
+  
+}
+
+.header-hero-grey {
+  width: 100%;
+  margin-top: 70px;
+  color: grey;
+  font-weight: 600; 
+  line-height: 1.2em;
+}
+
+.header-hero-grey h1 {
+  margin: 0 auto;
+  text-align: center;
+}
 
 .hr__mod1 {
   height: 4em;
@@ -230,6 +347,7 @@ body { font-family: Poppins, sans-serif; }
 /* fontawesome */
 
 /* !!!!!!!!!!!!FOTOGRAFIA!!!!!!!!!!! */
+
 .header-hero {
   width: 100%;
   margin-top: 100px;
@@ -244,8 +362,16 @@ body { font-family: Poppins, sans-serif; }
   text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+.header-hero {
+    font-size: 2.5em;
+    margin-top: 50px;
+  }
+}
+
 .fotos {
   margin-top: 85px;
+  width: 90%;
 }
 
 #navbar-secondary {
@@ -264,12 +390,6 @@ body { font-family: Poppins, sans-serif; }
   padding-top: 60px;
 }
 
-@media (min-width: 1200px) {
-  .container{
-      max-width: 95%;
-  }
-}
-
 .foto-caption {
   margin: 25px 0 55px 30px; 
   max-height: 40px;
@@ -281,29 +401,4 @@ body { font-family: Poppins, sans-serif; }
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.5em;
-}
-
-#c {
-  min-height: 355px;
-  background: rgb(220, 40, 26);
-}
-
-#d {
-  min-height: 150px;
-  background: rgb(0, 93, 159);
-}
-
-#e {
-  min-height: 150px;
-  background: rgb(255, 255, 255);
-}
-
-#f {
-  min-height: 75px;
-  background: rgb(255, 255, 255);
-}
-
-#g{
-  min-height: 75px;
-  background-color: rgb(242, 224, 122);
 }

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="Mexican Photographer, landscape photographs, seascapes photographs, cityscapes photographs, abstracts photographs, artistic photographs, wildlife photographs, horses photographs, black and white photographs, magic places photographs" />
+    <meta name="description" content="Welcome to Atl Photo Deco, Mexicans photographers and designers who bring with they artworks a unique style to your house." />
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <link rel = "canonical" href = "https://atlphotodeco.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/reset.css" type='text/css'>
+    <link rel="stylesheet" href="./styles/style.css" type="text/css"> 
+    <link rel="stylesheet" href="./styles/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,500,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600&display=swap" rel="stylesheet">
+    <script src="scripts/modernizr.custom.js"></script>
+    
+
+    <title>Archipielago</title>
+  </head>
+ 
+  <body>
+    
+    <header>
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-faded">
+          <a class="navbar-brand d-md-none py-0" href="#">
+              <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-4/adhoc/logo.png" alt="logo adhoc" />
+          </a>
+          <a class="navbar-brand d-md-none ml-auto py-0" href="#">
+              <img src="images/cart-white.png" alt="logo tienda" />
+          </a>
+          <button id="nav-toggler-full" class="navbar-toggler py-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span id="toggle-menu-close" class="fal fa-bars fa-lg"></span>
+          </button>
+          <div id="nav-fullheight" class="d-md-flex d-block w-100">
+              <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMarkup">
+                  <ul class="navbar-nav d-md-flex align-items-center">
+                    <li class="navbar-brand mx-2 d-none d-md-inline py-0">
+                        <a  href="#">
+                            <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-bootstrap-4/adhoc/logo.png" alt="logo adhoc" />
+                        </a>
+                    </li>
+                    <li class="nav-item  h-100 active">
+                      <a class="nav-link " href="./index.html">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                      <a class="nav-link " href="fotografias.html">Fotografías</a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                      <a class="nav-link " href="showroom.html">Showroom</a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                      <a class="nav-link " href="#">Los Artistas</a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                      <a class="nav-link " href="#">Contacto</a>
+                    </li>
+                    <li class="navbar-brand mx-2 d-none d-md-inline py-0">
+                        <a  href="#">
+                            <img src="images/cart-white.png" alt="logo tienda" />
+                        </a>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+  
+
+      <nav class="navbar navbar-expand-md navbar-dark bg-faded" id="navbar-secondary">
+          <a class="navbar-brand d-md-none py-0 title-navbar-secondary" href="#">
+              COLECCIONES
+          </a>
+          <button id="nav-toggler-angle" class="navbar-toggler py-0" type="button" data-toggle="collapse" data-target="#navbarNavAltMar" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span id="dynamic-collapse-btn" class="fal fa-angle-down fa-lg"></span>
+          </button>
+          <div class="d-md-flex d-block w-100">
+              <div class="collapse navbar-collapse mx-auto w-auto justify-content-center" id="navbarNavAltMar">
+                  <ul class="navbar-nav d-md-flex align-items-center">
+                    <li class="navbar-brand mx-2 d-none d-md-inline py-0">
+                        <a  href="#">
+                            DISEÑOS
+                        </a>
+                    </li>
+                    <li class="nav-item  h-100 active">
+                      <a class="nav-link " href="./index.html">Categoria 1<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                      <a class="nav-link " href="fotografias.html">Categoria 2</a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                      <a class="nav-link " href="cuadros.html">Categoria 3</a>
+                    </li>
+                    <li class="nav-item h-100 ">
+                      <a class="nav-link " href="#">Categoria 4</a>
+                    </li>              
+                  </ul>
+              </div>
+          </div>
+      </nav>
+
+  </header>
+
+    <div class="header-hero-black">
+      <h1> Todo cambia con un cuadro </h1>
+      <span class="header-hero-grey"> ...o varios. </span>
+    </div>
+    
+      <div class="container-fluid justify-content-center bg-white gallery-opc">
+              <div class="col-12">
+                <ul class="grid effect-8 popup" id="grid">
+                      <li class="heading grid-item">
+                          <a title="aguaverde" href="images/gallery/max/IMG_8953.JPG">
+                              <img src="images/gallery/aguaverde.jpg" alt="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8954.JPG">
+                              <img class="heading" src="images/gallery/animales.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8956.JPG">
+                              <img src="images/gallery/arcoiris.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8955.JPG">
+                              <img src="images/gallery/aurora.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8957.JPG">
+                              <img src="images/gallery/caribe.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8958.JPG">
+                              <img src="images/gallery/casa.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8959.JPG">
+                              <img src="images/gallery/cascadas.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8959.JPG">
+                              <img src="images/gallery/cenote.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8961.JPG">
+                              <img src="images/gallery/china.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8962.JPG">
+                              <img src="images/gallery/cristal.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8963.JPG">
+                              <img src="images/gallery/flores.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8965.JPG">
+                              <img src="images/gallery/irlanda.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8966.JPG">
+                              <img src="images/gallery/italia.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8967.JPG">
+                              <img src="images/gallery/lago.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8968.JPG">
+                              <img src="images/gallery/montañas.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          <div class="btn-to-shop">
+                              <form action="./index.html" method="get">
+                                <button class="btn btn-danger py-0 pl-1 " type="submit">Comprar</button>
+                              </form>     
+                            </div>
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8969.JPG">
+                              <img src="images/gallery/nieve.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8970.JPG">
+                              <img src="images/gallery/nubes.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8974.JPG">
+                              <img src="images/gallery/pasto.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8975.JPG">
+                              <img src="images/gallery/piedras.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8976.JPG">
+                              <img src="images/gallery/pradera.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8977.JPG">
+                              <img src="images/gallery/rio.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8977.JPG">
+                              <img src="images/gallery/valle.jpg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                      <li class="heading grid-item">
+                          <a href="images/gallery/max/IMG_8978.JPG">
+                              <img src="images/gallery/villa.jpeg" alt="nombre imagen" title="nombre imagen">
+                          </a>
+                          
+                      </li>
+                  </ul>
+      </div>
+    </div>
+
+    <div class="col-12">
+      <a href="#" class="back-top btn">
+        <i class="fa fa-angle-up fa-2x"></i>
+      </a>
+    </div>   
+      
+      
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+    
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+    crossorigin="anonymous"></script>
+    
+    <script src='scripts/main.js'></script> 
+
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+
+    <script src="scripts/classie.js"></script>
+    <script src="scripts/AnimOnScroll.js"></script>
+
+    <script src="./scripts/jquery.magnific-popup.js"></script>
+
+    <script>
+        new AnimOnScroll( document.getElementById( 'grid' ), {
+            minDuration : 0.4,
+            maxDuration : 0.6,
+            viewportFactor : 0.2
+        } );
+    </script>
+
+    <script>
+    $(document).ready(function() {
+        $('.popup').magnificPopup({
+            delegate: 'a',
+            type: 'image',
+            tLoading: 'Loading image #%curr%...',
+            mainClass: 'mfp-with-zoom mfp-img-mobile',
+            gallery: {
+                enabled: true,
+                navigateByImgClick: true,
+                preload: [0, 1]
+            },
+            
+            image: {
+                tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+                cursor: 'nule',
+                verticalFit: true,
+                titleSrc: function(item) {
+                   var caption = item.el.attr('title');        
+      
+                return caption + ' &middot; <a href="./index.html"><button class="btn btn-danger">Comprar</button></a>';
+          }
+            }
+        });
+    });
+</script>
+    
+
+
+
+  </body>
+ 
+</html>
