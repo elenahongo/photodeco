@@ -129,40 +129,78 @@ html {
 
 /* !!!!!!!!! FULLPAGE !!!!!!!!! */
 
+/* Style for our header texts
+	* --------------------------------------- */
+	h2{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	.section{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	}
+	.slide{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+	}
+
+  /* Defining each section background and styles
+	* --------------------------------------- */
+
 #section1 {
   background-image: url("../images/gallery/montañas.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  
 }
 
-#section2 {
-  background-image: url("../images/gallery/nubes.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-#section3 {
-  background-image: url("../images/gallery/pradera.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+#section1 div{
+  top: 50%;
+  transform: translateY(-50%);
+  position: relative;
 }
 
 #section4 {
   background-image: url("../images/gallery/valle.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;}
+  padding: 6% 0 0 0;
+  }
 
 #section5 {
   background-image: url("../images/gallery/aurora.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  padding: 6% 0 0 0;
 }
 
+#section5 h2{
+  color: #000;
+}
+
+/*Adding background for the slides
+  * --------------------------------------- */
+  
+  #section2 {
+  background-image: url("../images/gallery/nubes.jpg");
+  padding: 6% 0 0 0;
+  }
+
+  #section3 {
+  background-image: url("../images/gallery/pradera.jpg");
+  padding: 6% 0 0 0;
+  }
+
+	
 
 
 /* BOTON FLOTANTE */
@@ -192,8 +230,6 @@ html {
 .ani-title {
     display: none;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 2em;
 }
 
 /* !!!!!!!!!GALERIA.HTML!!!!!!!!!!!! */
